@@ -6,7 +6,7 @@
 > repo variable, then run the `benchmark` workflow. Budget needed to run live: `{{NEEDS_BENCHMARK_BUDGET}}`.
 
 - Mode: **SAMPLE**
-- Generated: 2026-07-19T18:07:55.902Z
+- Generated: 2026-07-20T00:00:00.000Z
 - Endpoint: https://daoxe.com/v1/chat/completions
 - Repeats per model: 5 · max_tokens: 8
 

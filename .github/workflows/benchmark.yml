@@ -59,7 +59,8 @@ jobs:
       - name: Aggregate leaderboard
         run: node scripts/aggregate.mjs --in data/results/latest.json --pricing data/pricing.json --out data/leaderboard.md --summary data/summary.json
 
-      - name: Archive dated snapshot
+      - name: Archive dated snapshot (real runs only)
+        if: steps.mode.outputs.mode == 'real'
         run: cp data/results/latest.json "data/results/$(date -u +%Y-%m-%d).json"
 
       - name: Commit results

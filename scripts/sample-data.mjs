@@ -50,7 +50,9 @@ async function main() {
   const report = {
     schema: 1,
     mode: "sample",
-    created_at: new Date().toISOString(),
+    // Fixed timestamp on purpose: keeps SAMPLE output deterministic so scheduled
+    // runs are no-ops (no fake-activity churn) until a real DAOXE_API_KEY is set.
+    created_at: "2026-07-20T00:00:00.000Z",
     endpoint: "https://daoxe.com/v1/chat/completions",
     max_tokens: 8,
     repeats: opts.repeats,
