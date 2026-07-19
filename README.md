@@ -115,3 +115,8 @@ Windsurf and more live in **[seven7763/DaoXE-AI](https://github.com/seven7763/Da
 > Disclosure: DaoXE is a service operated by the author of this repo. It is not
 > available in mainland China. This benchmark is designed so you can verify the
 > numbers yourself rather than take them on faith.
+
+## Acknowledgements
+
+Thanks to the [**LINUX DO**](https://linux.do) community for discussion and
+feedback on OpenAI-compatible gateway testing and benchmarking.
