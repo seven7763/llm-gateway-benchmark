@@ -1,0 +1,13 @@
+{
+  "_comment": "Price per 1,000,000 tokens (USD). null = needs confirmation by the DaoXE team ({{CONFIRM_PRICING}}). Do NOT invent numbers; fill from the official daoxe.com/pricing page.",
+  "example/claude-sonnet": { "input_per_1m": null, "output_per_1m": null },
+  "example/claude-haiku": { "input_per_1m": null, "output_per_1m": null },
+  "example/gpt-4o": { "input_per_1m": null, "output_per_1m": null },
+  "example/gpt-4o-mini": { "input_per_1m": null, "output_per_1m": null },
+  "example/gemini-2.5-pro": { "input_per_1m": null, "output_per_1m": null },
+  "example/gemini-2.5-flash": { "input_per_1m": null, "output_per_1m": null },
+  "example/deepseek-v3": { "input_per_1m": null, "output_per_1m": null },
+  "example/kimi-k2": { "input_per_1m": null, "output_per_1m": null },
+  "example/qwen-max": { "input_per_1m": null, "output_per_1m": null },
+  "example/doubao-pro": { "input_per_1m": null, "output_per_1m": null }
+}

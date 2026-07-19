@@ -1,0 +1,12 @@
+[
+  { "id": "example/claude-sonnet", "family": "claude", "sample_latency_ms": 780 },
+  { "id": "example/claude-haiku", "family": "claude", "sample_latency_ms": 430 },
+  { "id": "example/gpt-4o", "family": "gpt", "sample_latency_ms": 640 },
+  { "id": "example/gpt-4o-mini", "family": "gpt", "sample_latency_ms": 390 },
+  { "id": "example/gemini-2.5-pro", "family": "gemini", "sample_latency_ms": 720 },
+  { "id": "example/gemini-2.5-flash", "family": "gemini", "sample_latency_ms": 350 },
+  { "id": "example/deepseek-v3", "family": "deepseek", "sample_latency_ms": 900 },
+  { "id": "example/kimi-k2", "family": "kimi", "sample_latency_ms": 850 },
+  { "id": "example/qwen-max", "family": "qwen", "sample_latency_ms": 680 },
+  { "id": "example/doubao-pro", "family": "doubao", "sample_latency_ms": 610 }
+]

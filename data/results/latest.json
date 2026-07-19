@@ -1,0 +1,411 @@
+{
+  "schema": 1,
+  "mode": "sample",
+  "created_at": "2026-07-19T18:07:55.902Z",
+  "endpoint": "https://daoxe.com/v1/chat/completions",
+  "max_tokens": 8,
+  "repeats": 5,
+  "note": "SAMPLE data — illustrative only, not a real measurement. {{NEEDS_BENCHMARK_BUDGET}}",
+  "records": [
+    {
+      "model": "example/claude-sonnet",
+      "ok": true,
+      "status": 200,
+      "latency_ms": 979,
+      "total_tokens": 12,
+      "error": null
+    },
+    {
+      "model": "example/claude-sonnet",
+      "ok": true,
+      "status": 200,
+      "latency_ms": 946,
+      "total_tokens": 12,
+      "error": null
+    },
+    {
+      "model": "example/claude-sonnet",
+      "ok": true,
+      "status": 200,
+      "latency_ms": 702,
+      "total_tokens": 12,
+      "error": null
+    },
+    {
+      "model": "example/claude-sonnet",
+      "ok": true,
+      "status": 200,
+      "latency_ms": 955,
+      "total_tokens": 12,
+      "error": null
+    },
+    {
+      "model": "example/claude-sonnet",
+      "ok": true,
+      "status": 200,
+      "latency_ms": 973,
+      "total_tokens": 12,
+      "error": null
+    },
+    {
+      "model": "example/claude-haiku",
+      "ok": true,
+      "status": 200,
+      "latency_ms": 454,
+      "total_tokens": 12,
+      "error": null
+    },
+    {
+      "model": "example/claude-haiku",
+      "ok": true,
+      "status": 200,
+      "latency_ms": 448,
+      "total_tokens": 12,
+      "error": null
+    },
+    {
+      "model": "example/claude-haiku",
+      "ok": true,
+      "status": 200,
+      "latency_ms": 457,
+      "total_tokens": 12,
+      "error": null
+    },
+    {
+      "model": "example/claude-haiku",
+      "ok": true,
+      "status": 200,
+      "latency_ms": 427,
+      "total_tokens": 12,
+      "error": null
+    },
+    {
+      "model": "example/claude-haiku",
+      "ok": true,
+      "status": 200,
+      "latency_ms": 456,
+      "total_tokens": 12,
+      "error": null
+    },
+    {
+      "model": "example/gpt-4o",
+      "ok": true,
+      "status": 200,
+      "latency_ms": 741,
+      "total_tokens": 12,
+      "error": null
+    },
+    {
+      "model": "example/gpt-4o",
+      "ok": true,
+      "status": 200,
+      "latency_ms": 586,
+      "total_tokens": 12,
+      "error": null
+    },
+    {
+      "model": "example/gpt-4o",
+      "ok": true,
+      "status": 200,
+      "latency_ms": 738,
+      "total_tokens": 12,
+      "error": null
+    },
+    {
+      "model": "example/gpt-4o",
+      "ok": true,
+      "status": 200,
+      "latency_ms": 667,
+      "total_tokens": 12,
+      "error": null
+    },
+    {
+      "model": "example/gpt-4o",
+      "ok": true,
+      "status": 200,
+      "latency_ms": 660,
+      "total_tokens": 12,
+      "error": null
+    },
+    {
+      "model": "example/gpt-4o-mini",
+      "ok": true,
+      "status": 200,
+      "latency_ms": 348,
+      "total_tokens": 12,
+      "error": null
+    },
+    {
+      "model": "example/gpt-4o-mini",
+      "ok": true,
+      "status": 200,
+      "latency_ms": 356,
+      "total_tokens": 12,
+      "error": null
+    },
+    {
+      "model": "example/gpt-4o-mini",
+      "ok": true,
+      "status": 200,
+      "latency_ms": 381,
+      "total_tokens": 12,
+      "error": null
+    },
+    {
+      "model": "example/gpt-4o-mini",
+      "ok": true,
+      "status": 200,
+      "latency_ms": 373,
+      "total_tokens": 12,
+      "error": null
+    },
+    {
+      "model": "example/gpt-4o-mini",
+      "ok": true,
+      "status": 200,
+      "latency_ms": 451,
+      "total_tokens": 12,
+      "error": null
+    },
+    {
+      "model": "example/gemini-2.5-pro",
+      "ok": true,
+      "status": 200,
+      "latency_ms": 779,
+      "total_tokens": 12,
+      "error": null
+    },
+    {
+      "model": "example/gemini-2.5-pro",
+      "ok": true,
+      "status": 200,
+      "latency_ms": 880,
+      "total_tokens": 12,
+      "error": null
+    },
+    {
+      "model": "example/gemini-2.5-pro",
+      "ok": true,
+      "status": 200,
+      "latency_ms": 794,
+      "total_tokens": 12,
+      "error": null
+    },
+    {
+      "model": "example/gemini-2.5-pro",
+      "ok": true,
+      "status": 200,
+      "latency_ms": 920,
+      "total_tokens": 12,
+      "error": null
+    },
+    {
+      "model": "example/gemini-2.5-pro",
+      "ok": true,
+      "status": 200,
+      "latency_ms": 746,
+      "total_tokens": 12,
+      "error": null
+    },
+    {
+      "model": "example/gemini-2.5-flash",
+      "ok": true,
+      "status": 200,
+      "latency_ms": 416,
+      "total_tokens": 12,
+      "error": null
+    },
+    {
+      "model": "example/gemini-2.5-flash",
+      "ok": true,
+      "status": 200,
+      "latency_ms": 401,
+      "total_tokens": 12,
+      "error": null
+    },
+    {
+      "model": "example/gemini-2.5-flash",
+      "ok": true,
+      "status": 200,
+      "latency_ms": 360,
+      "total_tokens": 12,
+      "error": null
+    },
+    {
+      "model": "example/gemini-2.5-flash",
+      "ok": true,
+      "status": 200,
+      "latency_ms": 357,
+      "total_tokens": 12,
+      "error": null
+    },
+    {
+      "model": "example/gemini-2.5-flash",
+      "ok": true,
+      "status": 200,
+      "latency_ms": 404,
+      "total_tokens": 12,
+      "error": null
+    },
+    {
+      "model": "example/deepseek-v3",
+      "ok": true,
+      "status": 200,
+      "latency_ms": 1021,
+      "total_tokens": 12,
+      "error": null
+    },
+    {
+      "model": "example/deepseek-v3",
+      "ok": true,
+      "status": 200,
+      "latency_ms": 819,
+      "total_tokens": 12,
+      "error": null
+    },
+    {
+      "model": "example/deepseek-v3",
+      "ok": true,
+      "status": 200,
+      "latency_ms": 916,
+      "total_tokens": 12,
+      "error": null
+    },
+    {
+      "model": "example/deepseek-v3",
+      "ok": true,
+      "status": 200,
+      "latency_ms": 930,
+      "total_tokens": 12,
+      "error": null
+    },
+    {
+      "model": "example/deepseek-v3",
+      "ok": true,
+      "status": 200,
+      "latency_ms": 806,
+      "total_tokens": 12,
+      "error": null
+    },
+    {
+      "model": "example/kimi-k2",
+      "ok": true,
+      "status": 200,
+      "latency_ms": 1021,
+      "total_tokens": 12,
+      "error": null
+    },
+    {
+      "model": "example/kimi-k2",
+      "ok": true,
+      "status": 200,
+      "latency_ms": 781,
+      "total_tokens": 12,
+      "error": null
+    },
+    {
+      "model": "example/kimi-k2",
+      "ok": true,
+      "status": 200,
+      "latency_ms": 920,
+      "total_tokens": 12,
+      "error": null
+    },
+    {
+      "model": "example/kimi-k2",
+      "ok": true,
+      "status": 200,
+      "latency_ms": 821,
+      "total_tokens": 12,
+      "error": null
+    },
+    {
+      "model": "example/kimi-k2",
+      "ok": true,
+      "status": 200,
+      "latency_ms": 885,
+      "total_tokens": 12,
+      "error": null
+    },
+    {
+      "model": "example/qwen-max",
+      "ok": true,
+      "status": 200,
+      "latency_ms": 782,
+      "total_tokens": 12,
+      "error": null
+    },
+    {
+      "model": "example/qwen-max",
+      "ok": true,
+      "status": 200,
+      "latency_ms": 737,
+      "total_tokens": 12,
+      "error": null
+    },
+    {
+      "model": "example/qwen-max",
+      "ok": true,
+      "status": 200,
+      "latency_ms": 710,
+      "total_tokens": 12,
+      "error": null
+    },
+    {
+      "model": "example/qwen-max",
+      "ok": true,
+      "status": 200,
+      "latency_ms": 829,
+      "total_tokens": 12,
+      "error": null
+    },
+    {
+      "model": "example/qwen-max",
+      "ok": true,
+      "status": 200,
+      "latency_ms": 732,
+      "total_tokens": 12,
+      "error": null
+    },
+    {
+      "model": "example/doubao-pro",
+      "ok": true,
+      "status": 200,
+      "latency_ms": 740,
+      "total_tokens": 12,
+      "error": null
+    },
+    {
+      "model": "example/doubao-pro",
+      "ok": true,
+      "status": 200,
+      "latency_ms": 718,
+      "total_tokens": 12,
+      "error": null
+    },
+    {
+      "model": "example/doubao-pro",
+      "ok": true,
+      "status": 200,
+      "latency_ms": 766,
+      "total_tokens": 12,
+      "error": null
+    },
+    {
+      "model": "example/doubao-pro",
+      "ok": true,
+      "status": 200,
+      "latency_ms": 642,
+      "total_tokens": 12,
+      "error": null
+    },
+    {
+      "model": "example/doubao-pro",
+      "ok": true,
+      "status": 200,
+      "latency_ms": 628,
+      "total_tokens": 12,
+      "error": null
+    }
+  ]
+}

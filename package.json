@@ -1,0 +1,16 @@
+{
+  "name": "llm-gateway-benchmark",
+  "version": "0.1.0",
+  "description": "Reproducible, zero-dependency latency / availability / price benchmark for OpenAI-compatible LLM gateways (DaoXE as default example).",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "sample": "node scripts/sample-data.mjs --out data/results/latest.json && npm run aggregate",
+    "measure": "node bench/measure.mjs --repeats 5 --out data/results/latest.json",
+    "aggregate": "node scripts/aggregate.mjs --in data/results/latest.json --pricing data/pricing.json --out data/leaderboard.md --summary data/summary.json"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "license": "MIT"
+}

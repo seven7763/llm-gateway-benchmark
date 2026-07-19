@@ -1,0 +1,75 @@
+name: benchmark
+
+# Auto-updates the leaderboard. If the DAOXE_API_KEY secret is present it runs a
+# REAL, budgeted measurement; otherwise it refreshes clearly-labeled SAMPLE data
+# so the repo stays alive with zero spend. "Real run only needs a key + budget."
+
+on:
+  schedule:
+    - cron: "0 6 * * *" # daily at 06:00 UTC
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: "force 'real' or 'sample' (auto = decide by secret)"
+        required: false
+        default: "auto"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: benchmark
+  cancel-in-progress: false
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Decide mode
+        id: mode
+        env:
+          DAOXE_API_KEY: ${{ secrets.DAOXE_API_KEY }}
+          FORCED: ${{ github.event.inputs.mode }}
+        run: |
+          if [ "$FORCED" = "real" ]; then MODE=real;
+          elif [ "$FORCED" = "sample" ]; then MODE=sample;
+          elif [ -n "$DAOXE_API_KEY" ]; then MODE=real;
+          else MODE=sample; fi
+          echo "mode=$MODE" >> "$GITHUB_OUTPUT"
+          echo "Resolved benchmark mode: $MODE"
+
+      - name: Measure (real)
+        if: steps.mode.outputs.mode == 'real'
+        env:
+          DAOXE_API_KEY: ${{ secrets.DAOXE_API_KEY }}
+          DAOXE_MODELS: ${{ vars.DAOXE_MODELS }}
+          DAOXE_BASE_URL: ${{ vars.DAOXE_BASE_URL }}
+        run: node bench/measure.mjs --repeats 5 --out data/results/latest.json
+
+      - name: Generate sample data
+        if: steps.mode.outputs.mode == 'sample'
+        run: node scripts/sample-data.mjs --out data/results/latest.json
+
+      - name: Aggregate leaderboard
+        run: node scripts/aggregate.mjs --in data/results/latest.json --pricing data/pricing.json --out data/leaderboard.md --summary data/summary.json
+
+      - name: Archive dated snapshot
+        run: cp data/results/latest.json "data/results/$(date -u +%Y-%m-%d).json"
+
+      - name: Commit results
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/
+          if git diff --cached --quiet; then
+            echo "No leaderboard changes to commit."
+          else
+            git commit -m "chore(bench): update leaderboard (${{ steps.mode.outputs.mode }}) [skip ci]"
+            git push
+          fi

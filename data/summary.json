@@ -1,0 +1,106 @@
+{
+  "mode": "sample",
+  "created_at": "2026-07-19T18:07:55.902Z",
+  "rows": [
+    {
+      "model": "example/gpt-4o-mini",
+      "requests": 5,
+      "success_rate": 100,
+      "p50_ms": 373,
+      "p95_ms": 437,
+      "avg_ms": 382,
+      "input_per_m": null,
+      "output_per_m": null
+    },
+    {
+      "model": "example/gemini-2.5-flash",
+      "requests": 5,
+      "success_rate": 100,
+      "p50_ms": 401,
+      "p95_ms": 414,
+      "avg_ms": 388,
+      "input_per_m": null,
+      "output_per_m": null
+    },
+    {
+      "model": "example/claude-haiku",
+      "requests": 5,
+      "success_rate": 100,
+      "p50_ms": 454,
+      "p95_ms": 457,
+      "avg_ms": 448,
+      "input_per_m": null,
+      "output_per_m": null
+    },
+    {
+      "model": "example/gpt-4o",
+      "requests": 5,
+      "success_rate": 100,
+      "p50_ms": 667,
+      "p95_ms": 740,
+      "avg_ms": 678,
+      "input_per_m": null,
+      "output_per_m": null
+    },
+    {
+      "model": "example/doubao-pro",
+      "requests": 5,
+      "success_rate": 100,
+      "p50_ms": 718,
+      "p95_ms": 761,
+      "avg_ms": 699,
+      "input_per_m": null,
+      "output_per_m": null
+    },
+    {
+      "model": "example/qwen-max",
+      "requests": 5,
+      "success_rate": 100,
+      "p50_ms": 737,
+      "p95_ms": 820,
+      "avg_ms": 758,
+      "input_per_m": null,
+      "output_per_m": null
+    },
+    {
+      "model": "example/gemini-2.5-pro",
+      "requests": 5,
+      "success_rate": 100,
+      "p50_ms": 794,
+      "p95_ms": 912,
+      "avg_ms": 824,
+      "input_per_m": null,
+      "output_per_m": null
+    },
+    {
+      "model": "example/kimi-k2",
+      "requests": 5,
+      "success_rate": 100,
+      "p50_ms": 885,
+      "p95_ms": 1001,
+      "avg_ms": 886,
+      "input_per_m": null,
+      "output_per_m": null
+    },
+    {
+      "model": "example/deepseek-v3",
+      "requests": 5,
+      "success_rate": 100,
+      "p50_ms": 916,
+      "p95_ms": 1003,
+      "avg_ms": 898,
+      "input_per_m": null,
+      "output_per_m": null
+    },
+    {
+      "model": "example/claude-sonnet",
+      "requests": 5,
+      "success_rate": 100,
+      "p50_ms": 955,
+      "p95_ms": 978,
+      "avg_ms": 911,
+      "input_per_m": null,
+      "output_per_m": null
+    }
+  ]
+}
