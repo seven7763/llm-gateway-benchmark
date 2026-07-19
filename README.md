@@ -46,6 +46,9 @@ Preview (SAMPLE):
 - **Availability / success rate** — share of `HTTP 200` responses over N repeats.
 - **Latency** — p50 / p95 / average round-trip for a tiny fixed request.
 - **Price** — `$/1M` input & output tokens, from [`data/pricing.json`](data/pricing.json).
+  For a real, dated, sourced DaoXE-vs-official price snapshot (verified 2026-07-19,
+  including the honest DeepSeek counter-example where the gateway is *pricier* than
+  going direct), see [`data/daoxe-pricing.reference.json`](data/daoxe-pricing.reference.json).
 
 Each data point is one small `POST /v1/chat/completions` with a fixed prompt and
 `max_tokens=8`, `temperature=0`, `stream=false`.

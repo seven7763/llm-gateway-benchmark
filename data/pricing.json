@@ -1,5 +1,5 @@
 {
-  "_comment": "Price per 1,000,000 tokens (USD). null = needs confirmation by the DaoXE team ({{CONFIRM_PRICING}}). Do NOT invent numbers; fill from the official daoxe.com/pricing page.",
+  "_comment": "Price per 1,000,000 tokens (USD) for the SAMPLE leaderboard. These example/* models are illustrative placeholders, so prices stay null ({{CONFIRM_PRICING}}) until a real keyed run maps exact model IDs — do NOT invent numbers. For REAL, dated, sourced DaoXE-vs-official prices (verified 2026-07-19), see data/daoxe-pricing.reference.json.",
   "example/claude-sonnet": { "input_per_1m": null, "output_per_1m": null },
   "example/claude-haiku": { "input_per_1m": null, "output_per_1m": null },
   "example/gpt-4o": { "input_per_1m": null, "output_per_1m": null },
